@@ -6,13 +6,13 @@ namespace TeknikBilgi.Infrastructure.Constraints.Enums
     public enum Languages
     {
         [Description("Türkçe")]
-        [Display(Name = "NP.Admin.Languages.Turkish")]
+        [Display(Name = "Turkish")]
         Turkish = 1,
         [Description("İngilizce")]
-        [Display(Name = "NP.Admin.Languages.English")]
+        [Display(Name = "English")]
         English = 2,
         [Description("Almanca")]
-        [Display(Name = "NP.Admin.Languages.Deutch")]
+        [Display(Name = "Deutch")]
         Deutsch = 3
     }
 }

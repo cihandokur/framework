@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\ForgotPassword.cs" />
+    <Compile Include="Account\Info.cs" />
     <Compile Include="Account\Login.cs" />
+    <Compile Include="Account\My.cs" />
+    <Compile Include="Account\Password.cs" />
     <Compile Include="TempData\TempDataMessageContainerViewModel.cs" />
     <Compile Include="TempData\TempDataMessageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,9 +60,7 @@
       <Name>TeknikBilgi.Localization</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Common\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

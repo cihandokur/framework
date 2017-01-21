@@ -54,18 +54,5 @@ namespace TeknikBilgi.UI.Core.MvcExtensions
         {
             return html.Partial("~/Views/Shared/Buttons/Edit.cshtml", value);
         }
-
-        //public static MvcHtmlString ComponentItemButtons<T>(this HtmlHelper html, T model)
-        //{
-        //    return html.Partial("~/Views/PageLayout/ComponentItemButtonsPartial.cshtml", model);
-        //}
-        //public static MvcHtmlString ComponentToolsPartial<T>(this HtmlHelper html, T model)
-        //{
-        //    return html.Partial("~/Views/PageLayout/ComponentToolsPartial.cshtml", model);
-        //}
-        //public static MvcHtmlString LinkButtonEdit(this HtmlHelper html, string value = "")
-        //{
-        //    return html.Partial("~/Views/Shared/Buttons/EditLinkButton.cshtml", value);
-        //}
     }
 }

@@ -1,8 +1,6 @@
 ﻿using Autofac;
 using TeknikBilgi.Business.Core.Builder;
-using TeknikBilgi.Business.Core.Implement;
 using TeknikBilgi.Business.Core.Interface;
-using TeknikBilgi.Infrastructure.WebContext;
 
 namespace TeknikBilgi.Business.Core.Module
 {
@@ -16,7 +14,6 @@ namespace TeknikBilgi.Business.Core.Module
                 .InstancePerLifetimeScope();
 
             builder.RegisterType<AppConfigBuilder>().As<AppConfigBuilder>().SingleInstance();
-            builder.RegisterType<ContextUserProvider>().As<ContextUserProviderBase>().InstancePerLifetimeScope();
         }
     }
 }

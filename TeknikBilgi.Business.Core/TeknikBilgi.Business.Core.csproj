@@ -52,7 +52,6 @@
     <Compile Include="Builder\AppConfigBuilder.cs" />
     <Compile Include="Implement\AdminBusiness.cs" />
     <Compile Include="Implement\ApplicationBusiness.cs" />
-    <Compile Include="Implement\ContextUserProvider.cs" />
     <Compile Include="Interface\IAdminBusiness.cs" />
     <Compile Include="Interface\IApplicationBusiness.cs" />
     <Compile Include="Module\TeknikBilgiBusinessCoreModule.cs" />

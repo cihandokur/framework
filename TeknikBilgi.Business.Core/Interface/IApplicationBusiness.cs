@@ -119,55 +119,9 @@ namespace TeknikBilgi.Business.Core.Interface
         ///// <param name="statusId"></param>
         void SetApplicationConfigValueBy(Applications application, string mode, string key, string value, string description, Infrastructure.Constraints.Enums.Status.ApplicationConfig statusId);
 
-        ///// <summary>
-        ///// given app, given mode, given key, given value
-        ///// </summary>
-        ///// <param name="application"></param>
-        ///// <param name="mode"></param>
-        ///// <param name="key"></param>
-        ///// <param name="value"></param>
-        //void SetApplicationConfigValueBy(Applications application, string mode, string key, string value);
-
-        ///// <summary>
-        ///// current mode, given app, given key, given value
-        ///// </summary>
-        ///// <param name="application"></param>
-        ///// <param name="key"></param>
-        ///// <param name="value"></param>
-        //void SetApplicationConfigValueBy(Applications application, string key, string value);
-
-        ///// <summary>
-        ///// current app, given mode, given key, given value
-        ///// </summary>
-        ///// <param name="mode"></param>
-        ///// <param name="key"></param>
-        ///// <param name="value"></param>
-        //void SetApplicationConfigValueBy(string mode, string key, string value);
-
-        ///// <summary>
-        ///// current app, current mode, given key, given value
-        ///// </summary>
-        ///// <param name="key"></param>
-        ///// <param name="value"></param>
-        //void SetApplicationConfigValueBy(string key, string value);
-
         #endregion
-
-        #region Application
-
-        //Application AddApplicationBy(Applications application, string name, string description, int? orderNumber, Infrastructure.Constraints.Enums.Status.Application statusId);
-
-        #endregion
-
-
-        //void UpdateApplicationBy(int applicationId, string name, string description, int? orderNumber, Infrastructure.Constraints.Enums.Status.Application status);
-
-        //void UpdateApplicationStatusWithConfigBy(int id, int statusId, int applicationConfigStatusId);
-        //void UpdateApplicationStatusDeletedWithConfigBy(int id);
-
 
         Application GetApplication(Applications application);
-
 
         string ImageBaseUrl { get; }
 

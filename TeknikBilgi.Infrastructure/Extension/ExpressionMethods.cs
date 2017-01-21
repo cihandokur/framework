@@ -104,11 +104,6 @@ namespace TeknikBilgi.Infrastructure.Extension
             if (memberExpression == null)
                 throw new InvalidOperationException("Expression must be a member expression");
 
-            //var aliasAttr = memberExpression.Member.GetAttributeGeneric<BindAliasAttribute>();
-            //if (aliasAttr != null)
-            //{
-            //    return MvcHtmlString.Create(aliasAttr.Alias).ToString();
-            //}
             return GetMemberFullName(expression);
         }
 

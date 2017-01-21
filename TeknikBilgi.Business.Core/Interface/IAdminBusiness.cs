@@ -1,5 +1,4 @@
-﻿using Erp.UI.Admin.ViewModel.Account;
-using TeknikBilgi.Business.Core.ServiceResult;
+﻿using TeknikBilgi.Business.Core.ServiceResult;
 using TeknikBilgi.UI.Core.ViewModel.Account;
 
 namespace TeknikBilgi.Business.Core.Interface

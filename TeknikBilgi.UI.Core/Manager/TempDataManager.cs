@@ -13,17 +13,25 @@ namespace TeknikBilgi.UI.Core.Manager
         {
             if (key == null) throw new ArgumentNullException("key");
             if (tempData[key] == null)
+            {
                 yield break;
+            }
             var messageList = tempData[key] as List<TempDataMessageViewModel>;
             if (messageList != null)
+            {
                 foreach (var item in messageList)
+                {
                     yield return item;
+                }
+            }
         }
 
         public static void SetMessage(this TempDataDictionary tempData, TempDataMessageViewModel message, string key = Keys.TempDataMessage.General)
         {
             if (tempData[key] == null)
+            {
                 tempData[key] = new List<TempDataMessageViewModel>();
+            }
 
             var messageList = tempData[key] as List<TempDataMessageViewModel>;
             messageList.Add(message);
@@ -59,6 +67,5 @@ namespace TeknikBilgi.UI.Core.Manager
                 AutoClose = false
             });
         }
-
     }
 }

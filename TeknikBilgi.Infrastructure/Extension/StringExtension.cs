@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Globalization;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
 using TeknikBilgi.Infrastructure.Constraints.Enums;
 
@@ -8,11 +9,6 @@ namespace TeknikBilgi.Infrastructure.Extension
 {
     public static class StringExtension
     {
-        public static string AddRoot(this string url)
-        {
-            return string.Format("/{0}", url);
-        }
-
         public static string ReplaceTrChars(this string value)
         {
             value = value.Replace("ş", "s");
@@ -38,7 +34,7 @@ namespace TeknikBilgi.Infrastructure.Extension
 
         public static bool IsNullOrEmptyOrWhiteSpace(this string input)
         {
-            return string.IsNullOrEmpty(input) || input.Trim() == string.Empty;
+            return string.IsNullOrWhiteSpace(input) || input.Trim() == string.Empty;
         }
 
         public static string RemoveSpecialChars(this string val)
@@ -86,23 +82,23 @@ namespace TeknikBilgi.Infrastructure.Extension
         //refactored from UtilityTestFixture.
         public static string ReplaceSequenceChars(this string str, char chReplace)
         {
-            var strNew = "";
+            var strNew = new StringBuilder();
             var strLength = str.Length;
             if (strLength <= 1)
                 return str;
 
-            strNew += str[0];
+            strNew.Append(str[0]);
             for (var i = 1; i < strLength; i++)
             {
-                if (str[i] == chReplace && strNew.Last() == chReplace)
+                if (str[i] == chReplace && strNew.ToString().Last() == chReplace)
                     continue;
-                strNew += str[i];
+                strNew.Append(str[i]);
             }
-            return strNew;
+            return strNew.ToString();
         }
         public static string ReplaceSequenceChars(this string str)
         {
-            var strNew = "";
+            var strNew = string.Empty;
             var strLength = str.Length;
             if (strLength <= 1)
                 return str;

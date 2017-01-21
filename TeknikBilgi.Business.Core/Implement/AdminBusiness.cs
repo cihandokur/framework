@@ -1,17 +1,16 @@
 ﻿using System;
-using TeknikBilgi.Business.Core.ServiceResult;
-using TeknikBilgi.Infrastructure.Constraints.Structs;
-using TeknikBilgi.Infrastructure.WebContext;
-using TeknikBilgi.Business.Core.Interface;
-using TeknikBilgi.UI.Core.ViewModel.Account;
+using System.Linq;
 using System.Web;
-using TeknikBilgi.Infrastructure.Interface;
-using TeknikBilgi.Infrastructure.Constraints.Enums.Status;
+using TeknikBilgi.Business.Core.Interface;
+using TeknikBilgi.Business.Core.ServiceResult;
 using TeknikBilgi.Data.Core.Entity.Admin;
 using TeknikBilgi.Data.Core.Interface;
-using System.Linq;
+using TeknikBilgi.Infrastructure.Constraints.Enums.Status;
+using TeknikBilgi.Infrastructure.Constraints.Structs;
+using TeknikBilgi.Infrastructure.Interface;
 using TeknikBilgi.Infrastructure.Util;
-using Erp.UI.Admin.ViewModel.Account;
+using TeknikBilgi.Infrastructure.WebContext;
+using TeknikBilgi.UI.Core.ViewModel.Account;
 
 namespace TeknikBilgi.Business.Core.Implement
 {
@@ -81,34 +80,6 @@ namespace TeknikBilgi.Business.Core.Implement
         public ResultSet ForgotPasswordSendMail(string html, ForgotPassword admin)
         {
             ResultSet result = new ResultSet();
-
-            //var mail = new MailMessage
-            //{
-            //    IsBodyHtml = true,
-            //    Subject = _localizationBusiness.GetResource("NP.UI.Admin.Account.ForgotPassword.Subject"),
-            //    From = new MailAddress("console@dogangazetecilik.com.tr", "Console App"),
-            //    Body = html
-            //};
-
-            //mail.To.Add(admin.Email);
-
-            //try
-            //{
-
-            //    //var sendMail = new SendMail();
-            //    //sendMail.SendMailFromWebService(mail,
-            //    //    _applicationBusiness.GetApplicationConfigValueBy("EuroMsgAuthUser"),
-            //    //    _applicationBusiness.GetApplicationConfigValueBy("EuroMsgAuthPass"),
-            //    //    _applicationBusiness.GetApplicationConfigValueBy("EuroMsgFromAddress"),
-            //    //    _applicationBusiness.GetApplicationConfigValueBy("EuroMsgReplyAddress"),
-            //    //    _applicationBusiness.GetApplicationConfigValueBy("EuroMsgFromName"));
-            //    result.Success = true;
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    result.Message = ex.Message;
-            //}
 
             return result;
         }

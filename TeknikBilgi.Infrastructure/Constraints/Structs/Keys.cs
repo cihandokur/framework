@@ -40,32 +40,15 @@
 
         public struct System
         {
-            public const string ApplicationCode = "ApplicationCode";
             public const string ApplicationMode = "ApplicationMode";
-
-            public const string EuroMessage_EuroMsgAuthUser = "EuroMsgAuthUser";
-            public const string EuroMessage_EuroMsgAuthPass = "EuroMsgAuthPass";
-            public const string EuroMessage_LoginErrorCode = "00";
-            public const string EuroMessage_EuroMsgFromAddress = "EuroMsgFromAddress";
-            public const string EuroMessage_EuroMsgReplyAddress = "EuroMsgReplyAddress";
-            public const string EuroMessage_FromName = "Fanatik.com.tr";
-
-
             public const string CssErrorMessage = "errorMessage";
             public const string CssSuccessMessage = "errorMessage";
-
-
-
         }
-
 
         public struct TempDataMessage
         {
-            public const string General = "TDKey_General";
-            public const string PageLayoutHome = "TDKey_PageLayoutHome";
-            public const string PageLayoutNewspaperHome = "TDKey_PageLayoutNewspaperHome";
-            public const string PageLayoutCategoryGeneric = "TDKey_PageLayoutCategoryGeneric{0}";
-            public const string PageLayoutClubCategory = "TDKey_PageLayoutClubCategory{0}";
+            public const string General = "TdmGeneral";
+            public const string PageLayoutHome = "TdmPageLayoutHome";
         }
 
         public struct SubmitButton
@@ -74,29 +57,6 @@
             public const string SaveChanges = "SaveChanges";
             public const string SaveChangesAndClose = "SaveChangesAndClose";
             public const string SaveChangesAndReturn = "SaveChangesAndReturn";
-            public const string FetchArticle = "FetchArticle";
-            public static string PublishPage = "PublishPage";
-            public static string RevertPage = "RevertPage";
-            public static string ClearPage = "ClearPage";
-        }
-
-        public struct LotteryTypeName
-        {
-            public const string MilliPiyango = "piyango";
-            public const string SayisalLoto = "sayisal";
-            public const string SansTopu = "sanstopu";
-            public const string OnNumara = "onnumara";
-            public const string SuperLoto = "superloto";
-        }
-
-        public struct LotteryName
-        {
-            public const string MilliPiyango = "milli-piyango";
-            public const string SayisalLoto = "sayisal-loto";
-            public const string SansTopu = "sans-topu";
-            public const string OnNumara = "on-numara";
-            public const string SuperLoto = "super-loto";
-            public const string SporToto = "spor-toto";
         }
     }
 }

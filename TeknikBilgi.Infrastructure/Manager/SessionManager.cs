@@ -6,9 +6,8 @@ namespace TeknikBilgi.Infrastructure.Manager
     public class SessionManager : ISessionManager
     {
         private HttpSessionStateBase _httpSession;
-        public SessionManager(/*HttpSessionStateBase httpSession*/)
+        public SessionManager()
         {
-            //_httpSession = httpSession;
         }
 
         public HttpSessionStateBase SessionStateBase
@@ -16,7 +15,9 @@ namespace TeknikBilgi.Infrastructure.Manager
             get
             {
                 if (_httpSession == null)
+                {
                     _httpSession = new HttpSessionStateWrapper(HttpContext.Current.Session).Contents;
+                }
                 return _httpSession;
             }
         }
@@ -24,7 +25,9 @@ namespace TeknikBilgi.Infrastructure.Manager
         public object Get(string sessionName)
         {
             if (SessionStateBase == null)
+            {
                 return null;
+            }
             return SessionStateBase[sessionName];
         }
 
@@ -32,8 +35,9 @@ namespace TeknikBilgi.Infrastructure.Manager
         {
             var obj = Get(sessionName);
             if (obj != null)
+            {
                 return (T)obj;
-
+            }
             return default(T);
         }
 
@@ -41,9 +45,13 @@ namespace TeknikBilgi.Infrastructure.Manager
         {
             var obj = Get(sessionName);
             if (obj is T?)
+            {
                 return (T?)obj;
+            }
             if (obj != null)
+            {
                 return (T?)obj;
+            }
             return new T?();
         }
 

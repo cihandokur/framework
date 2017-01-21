@@ -14,12 +14,8 @@ namespace TeknikBilgi.Infrastructure.WebContext
 
         public readonly Guid MallocGuid = Guid.NewGuid();
 
-        protected ContextUserProviderBase(
-            //HttpContextBase contextBase,
-            ISessionManager sessionManager
-            )
+        protected ContextUserProviderBase(ISessionManager sessionManager)
         {
-            //_context = contextBase;
             _sessionManager = sessionManager;
         }
 
