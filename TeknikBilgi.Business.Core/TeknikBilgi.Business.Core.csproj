@@ -41,12 +41,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builder\AppConfigBuilder.cs" />
@@ -59,18 +53,6 @@
     <Compile Include="ServiceResult\ResultSet.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Erp.Data\Erp.Data.csproj">
-      <Project>{C690A28C-35A8-4B77-9FAE-294E3EC27D8D}</Project>
-      <Name>Erp.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Erp.Localization\Erp.Localization.csproj">
-      <Project>{5C584D89-02B9-455B-8847-69549B72ECFE}</Project>
-      <Name>Erp.Localization</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Erp.UI.Admin.ViewModel\Erp.UI.Admin.ViewModel.csproj">
-      <Project>{8BDF4B1F-C84F-4D5A-AA9E-B60630B5E3ED}</Project>
-      <Name>Erp.UI.Admin.ViewModel</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TeknikBilgi.Data.Core\TeknikBilgi.Data.Core.csproj">
       <Project>{EA18E704-FD5B-4C7C-8483-7C8D24BFBF90}</Project>
       <Name>TeknikBilgi.Data.Core</Name>

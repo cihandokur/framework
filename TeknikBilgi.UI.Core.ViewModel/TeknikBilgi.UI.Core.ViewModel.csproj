@@ -33,12 +33,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account\ForgotPassword.cs" />
@@ -54,10 +48,6 @@
     <ProjectReference Include="..\TeknikBilgi.Infrastructure\TeknikBilgi.Infrastructure.csproj">
       <Project>{23C163F4-5939-40F9-96EC-CBB91A976561}</Project>
       <Name>TeknikBilgi.Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TeknikBilgi.Localization\TeknikBilgi.Localization.csproj">
-      <Project>{f258776e-f9fe-4af0-9904-4c01697938e0}</Project>
-      <Name>TeknikBilgi.Localization</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
